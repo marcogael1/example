@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clasificador de insectos</title>
+</head>
+<body>
+    <h1>Clasificador de insectos</h1>
+    <form method="post">
+        <label for="abdomen">Abdomen:</label>
+        <input type="number" step="any" name="abdomen" required><br><br>
+
+        <label for="antena">Antena:</label>
+        <input type="number" step="any" name="antena" required><br><br>
+
+        <button type="submit">Predecir</button>
+    </form>
+
+    {% if resultado %}
+        <h2>Resultado: {{ resultado }}</h2>
+    {% endif %}
+</body>
+</html>
